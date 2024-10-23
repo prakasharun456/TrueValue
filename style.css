@@ -1,0 +1,200 @@
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 0;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+   
+  .label-upload {
+    display: inline-block;
+    background-color: #0ca3ab; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.label-upload:hover {
+    background-color: #12868a;
+}
+  
+  #billContainer {
+    margin-top: 20px;
+  }
+  
+  .bill {
+    page-break-after: always;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .bill-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.page{
+    width: 170mm;
+    height: 270mm;
+    margin: 0;    
+}
+.container-b{
+    border: 3px solid black;  
+}
+.topper{
+  margin-top: 20px;
+}
+.intro{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+.cin{
+    padding-left: 260px;
+    font-size: 1.1rem;
+}
+.report{
+    text-align: center;
+    line-height: 1.3;
+    font-size: 14px;
+}
+.cpv{
+    font-weight:bolder;
+    font-size: 16px;
+}
+.invoice-title{
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+.invoice-title h3{
+  font-weight: bold;
+}
+table {
+width: 100%;
+border-collapse: collapse; 
+}
+
+td {
+padding-top: 8px; 
+vertical-align: top;
+padding-right: 0px !important;
+padding-left: 0px !important;
+margin-right: 0px !important;
+margin-left: 0px !important;
+}
+
+h3 {
+margin: 0; 
+font-size: 24px;
+font-weight: normal; 
+}
+
+span {
+font-weight: bold;
+font-size: 22px;
+padding-left: 0px !important;
+margin-left: 0px !important;
+}
+#nested-table,#nested-row,#nested-data{
+padding: 0;
+margin: 0;
+}
+.tvpc-details{
+padding: 5px;
+border-top: 3px solid black;
+font-weight: bold;
+line-height: 1.2;
+font-family:'Times New Roman', Times, serif;
+font-size: 16px;
+}
+.topper{
+    padding-left:50px;
+}
+.tvpc-details span{
+  display: inline !important;
+  font-size: 16px;
+}
+
+@media print {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    padding: 20px !important; 
+    margin: 0 !important;
+    max-height: calc(100vh - 40px); 
+    page-break-inside: avoid; 
+    page-break-after: always; 
+    overflow: hidden; 
+    margin-left: 35px !important;
+    /* border: 1px solid red;  */
+    margin-top: 0 !important;
+  }
+  .topper{
+    margin-top: 50px;
+  }
+  /* .container-b{
+    /* margin-top: 12px; 
+  } */
+  .seal{
+    display: none;
+  }
+  @page {
+    margin: 0; 
+  }
+}
+
+
+@media (max-width:500px) {
+  .page{
+    width: 100vw;
+  }
+  
+}
+
+
+
+
